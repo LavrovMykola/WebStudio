@@ -1,0 +1,113 @@
+:root{
+    --bluecolor:#2196F3;
+    --blackcolor:black;
+    --whitecolor:white;
+    --title:#212121;
+    --text:#757575;
+    --background:#2F303A;
+}
+body{
+    font-size: 14px;
+    letter-spacing: 0.28px;
+    color: var(--text);
+}
+a{
+    text-decoration: none;
+    color: var(--title);
+}
+a:hover{
+    color: var(--bluecolor);
+}
+.web{
+    color: var(--bluecolor);
+    font-size: 26px;
+    letter-spacing: 0.78px;
+}
+.studioheader{
+    color: var(--blackcolor);
+}
+.studiofooter{
+    color: var(--whitecolor);
+}
+.contact{
+    color: var(--text);
+}
+ul {
+    list-style-type: none;
+  }
+footer {
+    background-color:var(--background);
+    color: white;
+    display: block;
+    height: 252px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+.firstsection{
+    background-color:var(--background);
+    display: block;
+    height: 600px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    
+}
+h1{
+color: white;
+font-size: 44px;
+letter-spacing: 2.64px;
+}
+.button{
+    background-color: var(--bluecolor);
+    color: var(--whitecolor);
+    font-size: 16px;
+    letter-spacing: 0.96px;
+    width: 216px;
+    height: 50px;
+}
+.imgnormal{
+    width: 370px;
+    height: 294px;
+}
+.imgsmall{
+    width: 270px;
+    height: 260px;
+}
+.title{
+    color: var(--title);
+}
+.text{
+    color: var(--text);
+}
+h2{
+    color: var(--title);
+}
+.ourteam{
+    font-size: 16px;
+}
+.portfolio-title{
+    color: var(--title);
+    font-size: 18px;
+    line-height: 36px;
+    letter-spacing: 1.08px;
+}
+.portfolio-text{
+    color: var(--text);
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.48px;
+}
+.mainbaton{
+    text-align: center;
+}
+.baton{
+    color: var(--title);
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.48px; 
+}
+.baton:hover{
+    background-color: var(--bluecolor);
+    color: var(--whitecolor);
+}
