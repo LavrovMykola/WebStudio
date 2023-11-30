@@ -20,7 +20,7 @@ a:hover{
 }
 .web{
     color: var(--bluecolor);
-    font-family: 'Raleway Bold', serif;
+    font-family: 'Raleway',serif;
 font-size: 26px;
 font-style: normal;
 font-weight: 700;
@@ -29,7 +29,7 @@ letter-spacing: 0.78px;
 }
 .studioheader{
     color: var(--blackcolor);
-    font-family: 'Raleway Bold', serif;
+    font-family: 'Raleway', serif;
 font-size: 26px;
 font-style: normal;
 font-weight: 700;
@@ -38,7 +38,7 @@ letter-spacing: 0.78px;
 }
 .studiofooter{
     color: var(--whitecolor);
-    font-family: 'Raleway Bold', serif;
+    font-family: 'Raleway', serif;
 }
 .contact{
     color: var(--text);
