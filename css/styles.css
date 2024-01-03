@@ -14,7 +14,16 @@ body{
     font-weight: 400;
     font-style: normal;
 }
+h2, h3, h4, ul, p, button{
+    padding: 0;
+    margin: 0;
+}
 /* Header-------------------------------------------------------------- */
+.header{
+    padding: 24px 15px 25px;
+    width: 1630px;
+    margin: 0 auto;
+}
 .web{
     color: var(--blue-color);
     font-family: 'Raleway',serif;
@@ -49,20 +58,25 @@ a:hover{
     font-family: 'Roboto', sans-serif;
     line-height: normal;
     font-weight: 700;
-    /* Main------------------------------------------------------------ */
 }
+    /* Main------------------------------------------------------------ */
 ul {
     list-style-type: none;
   }
-.black{
+  h2{
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
+  }
+.what-we-do-title{
+    margin: 94px auto 50px;  
 }
-.firstsection{
+.ourteam-title{
+margin: 188px 0 50px;
+}
+.main-background{
     background-color:var(--background-color);
     width: 100%;
     height: 600px;
-    flex-shrink: 0;
 }
 #caption{
 color: var(--white-color);
@@ -73,26 +87,33 @@ font-weight: 900;
 line-height: 1.36;
 letter-spacing: 2.64px;
 margin: 0 auto;
-padding: 200px 0 170px 0;
-width: 696px;
-height: 120px;
+padding: 200px 0 40px;
 }
-#button{
+#button{ 
     background-color: var(--blue-color);
     color: var(--white-color);
     width: 216px;
     height: 50px;
     text-align: center;
     font-family: 'Roboto', sans-serif;
-font-size: 16px;
-font-weight: 700;
-line-height: 1.87;
-letter-spacing: 0.96px;
-    border: 0px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.87;
+    letter-spacing: 0.96px;
+    border: none;
     border-radius: 4px;
-    padding: 10px ;
-    margin: 0px 44%;
+    padding: 10px 16px;
+    display: block;
+    margin: 0 auto  200px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+.main-border{
+    width: 1630px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+img{
+    margin-right: 30px;
 }
 .img-normal{
     width: 370px;
@@ -102,16 +123,37 @@ letter-spacing: 0.96px;
     width: 270px;
     height: 260px;
 }
-.title{
+.instruction{
+    width: 1630px;
+    margin: 0 auto;
+}
+.box-instruction{
+    display: flex;
+    flex-wrap: wrap;
+    width: 270px;
+}
+.title-instruction{
+    margin: 94px 0 0 0;
+}
+.ourteam-box{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 270px;
+}
+.title-ourteam{
+    margin: 30px 0 0 0;
+}
+.title-instruction, .title-ourteam{
     color: var(--title-color);
     font-family: 'Roboto', sans-serif;
-    width: 270px;
 font-weight: 700;
 line-height: normal;
 letter-spacing: 0.42px;
 text-transform: uppercase;
 }
-.text{
+.text-instruction, .text-ourteam{
+    padding: 10px 30px 0 0;
     color: var(--text-color);
 font-weight: 400;
 line-height: 1.71;
@@ -125,6 +167,7 @@ h2{
 }
 /* Footer-------------------------------------------------------------- */
 footer {
+    padding: 0 15px;
     background-color:var(--background-color);
     color: white;
     display: block;

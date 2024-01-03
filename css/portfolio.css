@@ -14,7 +14,16 @@ body{
     font-weight: 400;
     font-style: normal;
 }
+h2, h3, h4, ul, p, button{
+    padding: 0;
+    margin: 0;
+}
 /* Header-------------------------------------------------------------- */
+.header{
+    padding: 24px 15px 25px;
+    width: 1630px;
+    margin: 0 auto;
+}
 .web{
     color: var(--blue-color);
     font-family: 'Raleway',serif;
@@ -49,8 +58,13 @@ a:hover{
     font-family: 'Roboto', sans-serif;
     line-height: normal;
     font-weight: 700;
-    /* Main------------------------------------------------------------ */
 }
+    /* Main------------------------------------------------------------ */
+    .main-portoflio{
+        width: 1630px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
 ul {
     list-style-type: none;
   }
@@ -58,9 +72,12 @@ ul {
     width: 370px;
     height: 294px;
 }
-
 h2{
     color: var(--title-color);
+}
+.box-portfolio{
+width: 370px;
+padding-right: 30px;
 }
 .title-portfolio{
     color: var(--title-color);
@@ -69,27 +86,30 @@ h2{
     letter-spacing: 1.08px;
     font-weight: 700;
     font-family: 'Roboto', sans-serif;
+    margin: 20px 24px 4px;
 }
 .text-portfolio{
     color: var(--text-color);
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.48px;
+    margin: 0 24px 50px;
 }
 .main-baton{
     text-align: center;
 }
 .button-portfolio{
+    margin: 94px 8px 50px 0;
+    padding: 6px 22px;
     color: var(--title-color);
     box-sizing: border-box;
-    width: 73px;
-    height: 26px;
+    max-width: 130px;
+    height: 38px;
     font-size: 16px;
     line-height: 1.625;
     letter-spacing: 0.48px;
-    border: 0;
+    border: none;
     border-radius: 4px;
-    margin-left: 8px;
     font-weight: 500;
     font-family: 'Roboto', sans-serif;
 }
@@ -99,6 +119,8 @@ h2{
 }
 /* Footer-------------------------------------------------------------- */
 footer {
+    margin: 64px 0 0;
+    padding: 0 15px;
     background-color:var(--background-color);
     color: white;
     display: block;
@@ -118,4 +140,7 @@ footer {
 }
 .address-footer{
     line-height: 1.71;
+}
+.container-footer{
+    margin: 60px 0 60px 200px;
 }
