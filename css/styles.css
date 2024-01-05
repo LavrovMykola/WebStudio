@@ -21,29 +21,42 @@ h2, h3, h4, ul, p, button{
 /* Header-------------------------------------------------------------- */
 .header{
     padding: 24px 15px 25px;
-    width: 1630px;
+    width: 1230px;
+    height: 80px;
     margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
 .web{
     color: var(--blue-color);
     font-family: 'Raleway',serif;
-font-size: 26px;
-font-weight: 700;
-line-height: normal;
-letter-spacing: 0.78px;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.78px;
 }
 .header-studio{
     color: var(--black-color);
     font-family: 'Raleway', serif;
-font-size: 26px;
-font-weight: 700;
-line-height: normal;
-letter-spacing: 0.78px;
-}
+    font-size: 26px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.78px;
+} 
 .navigation{
     font-family: 'Roboto', sans-serif;
     line-height: 1.62;
     font-weight: 500;
+}
+.nav-list{
+    display: flex;
+    gap: 55px;
+}
+.header-list{
+    display: flex;
+    gap: 55px;
 }
 a{
     text-decoration: none;
@@ -59,7 +72,7 @@ a:hover{
     line-height: normal;
     font-weight: 700;
 }
-    /* Main------------------------------------------------------------ */
+/* Main------------------------------------------------------------ */
 ul {
     list-style-type: none;
   }
@@ -68,10 +81,20 @@ ul {
     font-weight: 700;
   }
 .what-we-do-title{
-    margin: 94px auto 50px;  
+    margin: 94px auto 50px;
+    font-size: 36px;  
+    text-align: center;
+}
+.list-what-we-do{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    justify-content: space-between;
 }
 .ourteam-title{
-margin: 188px 0 50px;
+    margin: 188px 0 50px;
+    font-size: 36px;  
+    text-align: center;
 }
 .main-background{
     background-color:var(--background-color);
@@ -79,15 +102,15 @@ margin: 188px 0 50px;
     height: 600px;
 }
 #caption{
-color: var(--white-color);
-text-align: center;
-font-family: 'Roboto', sans-serif;
-font-size: 44px;
-font-weight: 900;
-line-height: 1.36;
-letter-spacing: 2.64px;
-margin: 0 auto;
-padding: 200px 0 40px;
+    color: var(--white-color);
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 1.36;
+    letter-spacing: 2.64px;
+    margin: 0 auto;
+    padding: 200px 0 40px;
 }
 #button{ 
     background-color: var(--blue-color);
@@ -108,12 +131,15 @@ padding: 200px 0 40px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 .main-border{
-    width: 1630px;
+    width: 1230px;
     margin: 0 auto;
     padding: 0 15px;
 }
-img{
-    margin-right: 30px;
+.list-box-instruction{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+  
 }
 .img-normal{
     width: 370px;
@@ -123,10 +149,6 @@ img{
     width: 270px;
     height: 260px;
 }
-.instruction{
-    width: 1630px;
-    margin: 0 auto;
-}
 .box-instruction{
     display: flex;
     flex-wrap: wrap;
@@ -135,29 +157,37 @@ img{
 .title-instruction{
     margin: 94px 0 0 0;
 }
-.ourteam-box{
+.list-ourteam-box{
     display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    justify-content: space-between;
+}
+.ourteam-box{
+    display: block;
     flex-wrap: wrap;
     text-align: center;
     width: 270px;
 }
 .title-ourteam{
-    margin: 30px 0 0 0;
+    margin: 30px 0 10px 0;
+}
+.text-ourteam{
+    margin-bottom: 124px;
 }
 .title-instruction, .title-ourteam{
     color: var(--title-color);
     font-family: 'Roboto', sans-serif;
-font-weight: 700;
-line-height: normal;
-letter-spacing: 0.42px;
-text-transform: uppercase;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+
 }
 .text-instruction, .text-ourteam{
-    padding: 10px 30px 0 0;
     color: var(--text-color);
-font-weight: 400;
-line-height: 1.71;
-letter-spacing: 0.42px;
+    font-weight: 400;
+    line-height: 1.71;
+    letter-spacing: 0.42px;
 }
 h2{
     color: var(--title-color);
@@ -167,7 +197,7 @@ h2{
 }
 /* Footer-------------------------------------------------------------- */
 footer {
-    padding: 0 15px;
+    padding: 0 150px;
     background-color:var(--background-color);
     color: white;
     display: block;
@@ -187,4 +217,7 @@ footer {
 }
 .address-footer{
     line-height: 1.71;
+}
+.container-footer{
+    margin: 60px 0 60px 200px;
 }
