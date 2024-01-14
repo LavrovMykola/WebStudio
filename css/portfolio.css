@@ -22,7 +22,6 @@ h2, h3, h4, ul, p, button{
 .header{
     padding: 24px 15px 25px;
     width: 1230px;
-    height: 80px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -71,11 +70,11 @@ a:hover{
     font-family: 'Roboto', sans-serif;
     line-height: normal;
     font-weight: 700;
-}   
+}
 /* Main------------------------------------------------------------ */
-    .main-portoflio{
+.main-portoflio{
         width: 1230px;
-        margin: 0 auto;
+        margin: 94px auto;
         padding: 0 15px;
     }
 ul {
@@ -109,9 +108,10 @@ h2{
 }
 .main-baton{
     text-align: center;
+    margin-bottom: 50px;
 }
 .button-portfolio{
-    margin: 94px 8px 50px 0;
+    margin-right: 8px;
     padding: 6px 22px;
     color: var(--title-color);
     box-sizing: border-box;
@@ -138,8 +138,7 @@ h2{
 }
 /* Footer-------------------------------------------------------------- */
 footer {
-    margin: 64px 0 0;
-    padding: 0 15px;
+    padding: 0 150px;
     background-color:var(--background-color);
     color: white;
     display: block;
