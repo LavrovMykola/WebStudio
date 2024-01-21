@@ -14,9 +14,14 @@ body{
     font-weight: 400;
     font-style: normal;
 }
-h2, h3, h4, ul, p, button{
+h2, h3, h4, ul, p, button {
     padding: 0;
     margin: 0;
+}
+.container {
+    width: 1230px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 /* Header-------------------------------------------------------------- */
 .header > .container{
@@ -78,12 +83,7 @@ h2{
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     color: var(--title-color);
-  }
-  .container{
-    width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
-  }
+}
 .main-background{
     background-color:var(--background-color);
     width: 100%;
@@ -151,7 +151,7 @@ h2{
 }
 .what-we-do {
      padding: 94px 0 188px;
- }
+}
 .what-we-do-title {
      padding-bottom: 50px;
      font-size: 36px;
@@ -162,10 +162,10 @@ h2{
      flex-wrap: wrap;
      column-gap: 30px;
      justify-content: space-between;
- }
+}
  .ourteam {
      font-size: 16px;
- }
+}
 .ourteam-title{
     font-size: 36px;  
     text-align: center;
@@ -201,7 +201,6 @@ h2{
 }
 /* Footer-------------------------------------------------------------- */
 footer {
-    /* padding: 0 150px; */
     background-color:var(--background-color);
     color: white;
     display: block;
@@ -209,6 +208,10 @@ footer {
     left: 0;
     position: absolute;
     width: 100%;
+    line-height: 1.71;
+}
+footer > .container {
+    margin: 60px auto ;
 }
 .footer-studio{
     color: var(--white-color);
@@ -217,11 +220,7 @@ footer {
 }
 .contacts-footer{
     color: var(--text-color);
-    line-height: 1.71;
 }
 .address-footer{
-    line-height: 1.71;
-}
-footer > .container{
-margin: 60px auto 0;
+    padding-top: 20px;
 }
