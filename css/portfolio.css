@@ -92,7 +92,7 @@ h2{
     color: var(--title-color);
 }
 .box-portfolio{
-    width: 370px;
+    width: calc((100% - 370) / 3)
 }
 .title-portfolio{
     color: var(--title-color);
