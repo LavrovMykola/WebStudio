@@ -136,10 +136,12 @@ h2{
 .img-normal{
     width: 370px;
     height: 294px;
+    background-color: lightgray;
 }
 .img-small{
     width: 270px;
     height: 260px;
+    background-color: lightgray;
 }
 .instruction{
     width: 1200px;
