@@ -73,7 +73,7 @@ a:hover{
     color: var(--text-color);
     font-family: 'Roboto', sans-serif;
     line-height: normal;
-    font-weight: 700;
+    font-weight: 500;
 }
 /* Main------------------------------------------------------------ */
 ul {
@@ -147,7 +147,28 @@ h2{
     width: 270px;
 }
 .title-instruction{
-    margin-bottom: 10px;
+    margin: 30px 0 10px;
+}
+.box-instruction::before{
+    content: '';
+    display: block;
+    background-color: #F5F4FA;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 4px;
+    height: 120px;
+}
+.box-instruction:nth-child(1)::before{
+    background-image: url('../img.webstudio/antenna.svg');
+}
+.box-instruction:nth-child(2)::before {
+    background-image: url('../img.webstudio/clock.svg');
+}
+.box-instruction:nth-child(3)::before {
+    background-image: url('../img.webstudio/diagram.svg');
+}
+.box-instruction:nth-child(4)::before {
+    background-image: url('../img.webstudio/astronaut.svg');
 }
 .what-we-do {
      padding: 94px 0 188px;
@@ -163,8 +184,9 @@ h2{
      column-gap: 30px;
      justify-content: space-between;
 }
- .ourteam {
+.ourteam {
      font-size: 16px;
+     background-color: #F5F4FA;
 }
 .ourteam-title{
     font-size: 36px;  
@@ -182,6 +204,7 @@ h2{
     flex-wrap: wrap;
     text-align: center;
     width: 270px;
+    background-color: white;
 }
 .title-ourteam{
     margin: 30px 0 10px 0;
@@ -201,7 +224,7 @@ h2{
 }
 /* Footer-------------------------------------------------------------- */
 footer {
-    background-color:var(--background-color);
+    background-color: var(--background-color);
     color: white;
     display: block;
     height: 252px;
@@ -210,17 +233,18 @@ footer {
     width: 100%;
     line-height: 1.71;
 }
-footer > .container {
-    margin: 60px auto ;
+footer>.container {
+    margin: 60px auto;
 }
-.footer-studio{
+.footer-studio {
     color: var(--white-color);
     font-family: 'Raleway', serif;
     line-height: normal;
 }
-.contacts-footer{
+.contacts-footer {
     color: var(--text-color);
 }
-.address-footer{
-    padding-top: 20px;
+.footer-list {
+    margin-top: 20px;
+    gap: 9px;
 }
