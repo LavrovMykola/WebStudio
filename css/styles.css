@@ -86,8 +86,7 @@ h2{
 }
 .main-background{
     background-color: var(--background-color);
-    /* background-image: linear-gradient(center, rgba(47, 48, 58, 0.40)), url('../img.webstudio/overlay.jpg'); */
-    /* Чомусь не працює ^^^ */
+    /* background-image: linear-gradient(to right, rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40), url('../img.webstudio/overlay.jpg')); */
     background-image:url('../img.webstudio/overlay.jpg');
     background-size: cover;
     width: 100%;
@@ -211,6 +210,10 @@ h2{
     text-align: center;
     width: 270px;
     background-color: white;
+    padding-bottom: 30px;
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
 .title-ourteam{
     margin: 30px 0 10px 0;
@@ -252,5 +255,7 @@ footer>.container {
 }
 .footer-list {
     margin-top: 20px;
-    gap: 9px;
+}
+.footer-item:nth-child(2) {
+    margin: 9px 0;
 }
