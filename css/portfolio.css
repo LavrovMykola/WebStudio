@@ -1,12 +1,14 @@
-:root{
-    --blue-color:#2196F3;
-    --black-color:black;
-    --white-color:white;
-    --title-color:#212121;
-    --text-color:#757575;
-    --background-color:#2F303A;
+:root {
+    --blue-color: #2196F3;
+    --black-color: black;
+    --white-color: white;
+    --title-color: #212121;
+    --text-color: #757575;
+    --background-color: #2F303A;
+    --box-color: #F5F4FA;
+    --lightgray-color: lightgray;
 }
-body{
+body {
     font-size: 14px;
     letter-spacing: 0.28px;
     color: var(--text-color);
@@ -14,7 +16,7 @@ body{
     font-weight: 400;
     font-style: normal;
 }
-h2, h3, h4, ul, p, button{
+h2, h3, h4, ul, p, button {
     padding: 0;
     margin: 0;
 }
@@ -32,44 +34,44 @@ h2, h3, h4, ul, p, button{
     align-items: center;
     flex-wrap: wrap;
 }
-.web{
+.web {
     color: var(--blue-color);
-    font-family: 'Raleway',serif;
+    font-family: 'Raleway', serif;
     font-size: 26px;
     font-weight: 700;
     line-height: normal;
     letter-spacing: 0.78px;
 }
-.header-studio{
+.header-studio {
     color: var(--black-color);
     font-family: 'Raleway', serif;
     font-size: 26px;
     font-weight: 700;
     line-height: normal;
     letter-spacing: 0.78px;
-} 
-.navigation{
+}
+.navigation {
     font-family: 'Roboto', sans-serif;
     line-height: 1.62;
     font-weight: 500;
 }
-.nav-list{
+.nav-list {
     display: flex;
     gap: 55px;
 }
-.header-list{
+.header-list {
     display: flex;
     gap: 55px;
 }
-a{
+a {
     text-decoration: none;
     color: var(--title-color);
     line-height: normal;
 }
-a:hover{
+a:hover {
     color: var(--blue-color);
 }
-.contacts-header{
+.contacts-header {
     color: var(--text-color);
     font-family: 'Roboto', sans-serif;
     line-height: normal;
@@ -152,7 +154,7 @@ h2{
 /* Footer-------------------------------------------------------------- */
 footer {
     background-color: var(--background-color);
-    color: white;
+    color: var(--white-color);
     display: block;
     height: 252px;
     left: 0;
@@ -171,9 +173,9 @@ footer>.container {
 .contacts-footer {
     color: var(--text-color);
 }
-.footer-list{
+.footer-list {
     margin-top: 20px;
 }
-.footer-item:nth-child(2){
+.footer-item:nth-child(2) {
     margin: 9px 0;
 }

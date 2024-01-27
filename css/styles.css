@@ -5,6 +5,8 @@
     --title-color:#212121;
     --text-color:#757575;
     --background-color:#2F303A;
+    --box-color: #F5F4FA;
+    --lightgray-color: lightgray;
 }
 body{
     font-size: 14px;
@@ -86,8 +88,7 @@ h2{
 }
 .main-background{
     background-color: var(--background-color);
-    /* background-image: linear-gradient(to right, rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40), url('../img.webstudio/overlay.jpg')); */
-    background-image:url('../img.webstudio/overlay.jpg');
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40)), url('../img.webstudio/overlay.jpg'); 
     background-size: cover;
     width: 100%;
     height: 600px;
@@ -135,12 +136,12 @@ h2{
 .img-normal{
     width: 370px;
     height: 294px;
-    background-color: lightgray;
+    background-color: var(--lightgray-color);
 }
 .img-small{
     width: 270px;
     height: 260px;
-    background-color: lightgray;
+    background-color: var(--lightgray-color);
 }
 .instruction{
     width: 1200px;
@@ -157,7 +158,7 @@ h2{
 .box-instruction::before{
     content: '';
     display: block;
-    background-color: #F5F4FA;
+    background-color: var(--box-color);
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 4px;
@@ -176,40 +177,43 @@ h2{
     background-image: url('../img.webstudio/astronaut.svg');
 }
 .what-we-do {
-     padding: 94px 0 188px;
+    padding: 94px 0;
 }
 .what-we-do-title {
-     padding-bottom: 50px;
-     font-size: 36px;
-     text-align: center;
+    padding-bottom: 50px;
+    font-size: 36px;
+    text-align: center;
  }
 .list-what-we-do {
-     display: flex;
-     flex-wrap: wrap;
-     column-gap: 30px;
-     justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    justify-content: space-between;
 }
 .ourteam {
-     font-size: 16px;
-     background-color: #F5F4FA;
+    font-size: 16px;
+    background-color: var(--box-color);
 }
 .ourteam-title{
     font-size: 36px;  
     text-align: center;
+    padding: 94px 0 50px;
 }
 .list-ourteam-box{
     display: flex;
     flex-wrap: wrap;
     column-gap: 30px;
     justify-content: space-between;
-    padding: 50px 0 124px;
+}
+.ourteam > .container{
+    padding-bottom: 94px;
 }
 .ourteam-box{
     display: block;
     flex-wrap: wrap;
     text-align: center;
     width: 270px;
-    background-color: white;
+    background-color: var(--white-color);
     padding-bottom: 30px;
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14),
@@ -234,7 +238,7 @@ h2{
 /* Footer-------------------------------------------------------------- */
 footer {
     background-color: var(--background-color);
-    color: white;
+    color: var(--white-color);
     display: block;
     height: 252px;
     left: 0;
