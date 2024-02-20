@@ -16,7 +16,7 @@ body{
     font-weight: 400;
     font-style: normal;
 }
-h2, h3, h4, ul, p, button {
+h1, h2, h3, h4, h5, h6, ul, p, button {
     padding: 0;
     margin: 0;
 }
@@ -123,12 +123,7 @@ h2{
     margin: 0 auto;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
-.main-border{
-    width: 1230px;
-    margin: 0 auto;
-    padding: 0 15px;
-}
-.list-box-instruction{
+.list-box-instruction {
     display: flex;
     flex-wrap: wrap;
     column-gap: 30px;
@@ -143,9 +138,8 @@ h2{
     height: 260px;
     background-color: var(--lightgray-color);
 }
-.instruction{
-    width: 1200px;
-    padding-top: 94px;
+.instruction > .container{
+    padding: 94px 15px 0;
 }
 .box-instruction{
     display: block;
@@ -176,8 +170,8 @@ h2{
 .box-instruction:nth-child(4)::before {
     background-image: url('../img.webstudio/astronaut.svg');
 }
-.what-we-do {
-    padding: 94px 0;
+.what-we-do > .container {
+    padding: 94px 15px;
 }
 .what-we-do-title {
     padding-bottom: 50px;
@@ -197,7 +191,7 @@ h2{
 .ourteam-title{
     font-size: 36px;  
     text-align: center;
-    padding: 94px 0 50px;
+    padding: 0 0 50px;
 }
 .list-ourteam-box{
     display: flex;
@@ -206,7 +200,7 @@ h2{
     justify-content: space-between;
 }
 .ourteam > .container{
-    padding-bottom: 94px;
+    padding: 94px 15px;
 }
 .ourteam-box{
     display: block;
