@@ -79,9 +79,9 @@ a:hover {
 }
 /* Main------------------------------------------------------------ */
 .main-portoflio{
-    width: 1230px;
-    margin: 94px auto;
-    padding: 0 15px;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 94px 15px;
 }
 ul {
     list-style-type: none;
