@@ -7,6 +7,7 @@
     --background-color:#2F303A;
     --box-color: #F5F4FA;
     --lightgray-color: lightgray;
+    --svg-color: #AFB1B8;
 }
 body{
     font-size: 14px;
@@ -76,6 +77,16 @@ a:hover{
     font-family: 'Roboto', sans-serif;
     line-height: normal;
     font-weight: 500;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.contacts-header:hover .header-svg {
+    fill: var(--blue-color);
+}
+.header-svg{
+    fill: var(--text-color);
 }
 /* Main------------------------------------------------------------ */
 ul {
@@ -229,6 +240,74 @@ h2{
     line-height: 1.71;
     letter-spacing: 0.42px;
 }
+.text-ourteam{
+    margin-bottom: 16px;
+}
+.ourteam-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.ourteam-list__link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+}
+.ourteam-list__link:hover{
+    background-color: var(--blue-color);
+    border-radius: 50%;
+}
+.ourteam-list__svg{
+    width: 20px;
+    height: 20px;
+    fill: var(--svg-color);
+}
+.ourteam-list__link:hover .ourteam-list__svg{
+    fill: var(--white-color);
+}
+.clients >.container {
+    padding: 94px 15px;
+}
+.clients-title{
+    color: var(--title-color);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    font-size: 36px;
+    text-align: center;
+    padding: 0 0 50px;
+}
+.clients-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.clients-list__link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    border: 1px var(--svg-color) solid;
+    border-radius: 4px;
+}
+.clients-list__svg{
+    fill: var(--svg-color);
+    width: 106px;
+    height: 60px;
+}
+.clients-list__link:hover {
+    border: 1px var(--blue-color) solid;
+    
+}
+.clients-list__link:hover .clients-list__svg{
+    fill: var(--blue-color);
+}
 /* Footer-------------------------------------------------------------- */
 footer {
     background-color: var(--background-color);
@@ -253,7 +332,20 @@ footer>.container {
 }
 .footer-list {
     margin-top: 20px;
+    margin-right: 70px;
+    width: 231px;
 }
 .footer-item:nth-child(2) {
     margin: 9px 0;
+}
+footer > .ourteam-list{
+    display: flex;
+    justify-content: center;
+    width: 206px;
+    fill: var(--white-color);    
+}
+.join-to-us{
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.03em;
 }

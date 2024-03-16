@@ -76,6 +76,16 @@ a:hover {
     font-family: 'Roboto', sans-serif;
     line-height: normal;
     font-weight: 500;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.contacts-header:hover .header-svg {
+    fill: var(--blue-color);
+}
+.header-svg {
+    fill: var(--text-color);
 }
 /* Main------------------------------------------------------------ */
 .main-portoflio{
