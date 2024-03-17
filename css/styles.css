@@ -8,6 +8,7 @@
     --box-color: #F5F4FA;
     --lightgray-color: lightgray;
     --svg-color: #AFB1B8;
+    --svg-footer: rgba(255, 255, 255, 0.1);
 }
 body{
     font-size: 14px;
@@ -303,7 +304,6 @@ h2{
 }
 .clients-list__link:hover {
     border: 1px var(--blue-color) solid;
-    
 }
 .clients-list__link:hover .clients-list__svg{
     fill: var(--blue-color);
@@ -319,7 +319,7 @@ footer {
     width: 100%;
     line-height: 1.71;
 }
-footer>.container {
+footer > .container {
     margin: 60px auto;
 }
 .footer-studio {
@@ -338,14 +338,25 @@ footer>.container {
 .footer-item:nth-child(2) {
     margin: 9px 0;
 }
-footer > .ourteam-list{
-    display: flex;
-    justify-content: center;
-    width: 206px;
-    fill: var(--white-color);    
+.footer-right__section{
+    width: 231px;
+
 }
-.join-to-us{
+.footer-right__section{
+    width: 206px;
+}
+.join-to-us {
     font-weight: 700;
     font-size: 14px;
     letter-spacing: 0.03em;
+}
+.footer-right__section .ourteam-list__svg {
+    fill: var(--white-color);
+}
+.footer-right__section .ourteam-list__link {
+    background-color: var(--svg-footer);
+    border-radius: 50%;
+}
+.footer-right__section .ourteam-list__link:hover {
+    background-color: var(--blue-color);
 }
