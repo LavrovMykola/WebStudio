@@ -196,6 +196,21 @@ h2{
     column-gap: 30px;
     justify-content: space-between;
 }
+.keystroke-box{
+    position: relative;
+}
+.keystroke-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 0;
+    color: var(--white-color);
+    background-color: rgb(47, 48, 58, 0.8);
+    width: 370px;
+    height: 70px;
+}
 .ourteam {
     font-size: 16px;
     background-color: var(--box-color);
@@ -313,14 +328,12 @@ footer {
     background-color: var(--background-color);
     color: var(--white-color);
     display: block;
-    height: 252px;
-    left: 0;
-    position: absolute;
     width: 100%;
     line-height: 1.71;
+    padding: 60px 0;
 }
-footer > .container {
-    margin: 60px auto;
+.footer  .container{
+    display: flex;
 }
 .footer-studio {
     color: var(--white-color);
@@ -338,17 +351,12 @@ footer > .container {
 .footer-item:nth-child(2) {
     margin: 9px 0;
 }
-.footer-right__section{
-    width: 231px;
-
-}
-.footer-right__section{
-    width: 206px;
-}
 .join-to-us {
     font-weight: 700;
     font-size: 14px;
     letter-spacing: 0.03em;
+    margin-bottom: 20px;
+    text-transform: uppercase;
 }
 .footer-right__section .ourteam-list__svg {
     fill: var(--white-color);
@@ -359,4 +367,8 @@ footer > .container {
 }
 .footer-right__section .ourteam-list__link:hover {
     background-color: var(--blue-color);
+}
+.footer-right__section {
+    width: 206px;
+    padding-top: 12px;
 }
