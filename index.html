@@ -46,7 +46,54 @@
         <section class="main-background">
             <div class="container">
                 <h1 id="caption">Ефективне рішення для <br> вашого бізнесу</h1>
-                <button type="button" id="button">Замовити послугу</button>
+                <button type="button" id="button" data-modal-open>Замовити послугу</button>
+                <div class="backdrop" data-modal>
+                    <form class="modal">
+                        <button class="modal-btn__close" data-modal-close>
+                            <svg class="modal-svg__close">
+                                <use href="./img.webstudio/icons/symbol-defs.svg#icon-close"></use>
+                            </svg>
+                        </button>
+                        <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
+                        <ul class="modal-list">
+                            <li class="modal-list__item">
+                                <label for="name" class="modal-list__label">Ім'я
+                                    <input type="name" class="modal-list__input">
+                                    <svg class="modal-svg">
+                                        <use href="./img.webstudio/icons/symbol-defs.svg#icon-person"></use>
+                                    </svg>
+                                </label>
+                            </li>
+                            <li class="modal-list__item">
+                                <label for="tel" class="modal-list__label">Телефон
+                                    <input type="tel" class="modal-list__input">
+                                    <svg class="modal-svg">
+                                        <use href="./img.webstudio/icons/symbol-defs.svg#icon-telephone"></use>
+                                    </svg>
+                                </label>
+                            </li>
+                            <li class="modal-list__item">
+                                <label for="mailto" class="modal-list__label">Пошта
+                                    <input type="email" class="modal-list__input">
+                                    <svg class="modal-svg">
+                                        <use href="./img.webstudio/icons/symbol-defs.svg#icon-e-mail"></use>
+                                    </svg>
+                                </label>
+                            </li>
+                            <li class="modal-list__item">
+                                <label for="comment" class="modal-list__label">Коментар
+                                    <textarea name="text" id="comment" placeholder="Введіть текст"
+                                        class="modal-textarea"></textarea>
+                                </label>
+                            </li>
+                        </ul>
+                        <p class="modal-text">
+                            <input type="checkbox" class="modal-checkbox">
+                            Погоджуюсь з розсилкою та приймаю <a href="#" class="modal-link">Умови договору</a>
+                        </p>
+                        <button type="submit" class="modal-btn__send">Відправити</button>
+                    </form>
+                </div>
             </div>
         </section>
         <section class="instruction">
@@ -318,7 +365,7 @@
                     </li>
                 </ul>
             </section>
-            <section class="footer-right__section">
+            <section class="footer-central__section">
                 <h3 class="join-to-us">Приєднуйтесь</h3>
                 <ul class="ourteam-list">
                     <li class="ourteam-list__item">
@@ -351,8 +398,24 @@
                     </li>
                 </ul>
             </section>
+            <section class="footer-right__section">
+                <h3 class="subscribe">Підпишіться на розсилку</h3>
+                <ul class="subscribe-list">
+                    <li class="subscribe-list__item">
+                        <input type="text" class="subscribe-input" placeholder="E-mail">
+                    </li>
+                    <li class="subscribe-list__item">
+                        <button class="subscribe-btn">Підписатися
+                            <svg class="subcribe-svg">
+                                <use href="./img.webstudio/icons/symbol-defs.svg#icon-send"></use>
+                            </svg>
+                        </button>
+                    </li>
+                </ul>
+            </section>
         </div>
     </footer>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
