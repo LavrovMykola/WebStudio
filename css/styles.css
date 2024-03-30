@@ -252,8 +252,11 @@ h2{
 }
 .modal-svg__close{
     fill: var(--black-color);
-    width: 11px;
-    height: 11px;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 6px;
+    right: 6px;
 }
 .modal-svg__close:hover{
     fill: var(--blue-color);
@@ -513,6 +516,7 @@ footer {
     color:rgba(255, 255, 255, 0.6) ;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
+    outline: none;
 }
 .subscribe-list{
     display: flex;
