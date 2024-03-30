@@ -517,6 +517,7 @@ footer {
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
     outline: none;
+    cursor: pointer;
 }
 .subscribe-list{
     display: flex;
@@ -535,6 +536,7 @@ footer {
     line-height: 1.87;
     letter-spacing: 0.06em;
     position: relative;
+    cursor: pointer;
 }
 .subcribe-svg{
     width: 24px;

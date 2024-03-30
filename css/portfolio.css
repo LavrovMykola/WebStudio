@@ -7,6 +7,9 @@
     --background-color: #2F303A;
     --box-color: #F5F4FA;
     --lightgray-color: lightgray;
+    --svg-color: #AFB1B8;
+    --svg-footer: rgba(255, 255, 255, 0.1);
+
 }
 body {
     font-size: 14px;
@@ -189,12 +192,93 @@ footer {
 .footer-item:nth-child(2) {
     margin: 9px 0;
 }
-.join-to-us {
+.join-to-us, .subscribe {
     font-weight: 700;
     font-size: 14px;
     letter-spacing: 0.03em;
     margin-bottom: 20px;
     text-transform: uppercase;
+}
+.footer-central__section .ourteam-list__svg {
+    fill: var(--white-color);
+}
+.footer-central__section .ourteam-list__link {
+    background-color: var(--svg-footer);
+    border-radius: 50%;
+}
+.footer-central__section .ourteam-list__link:hover {
+    background-color: var(--blue-color);
+}
+.footer-central__section {
+    width: 206px;
+    padding-top: 12px;
+}
+.footer-right__section {
+    width: 570px;
+    margin: 12px 0 0 94px;
+}
+.subscribe-input {
+    width: 358px;
+    height: 50px;
+    padding: 15px;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+}
+.subscribe-list {
+    display: flex;
+    gap: 12px;
+}
+.subscribe-btn {
+    width: 200px;
+    height: 50px;
+    background-color: var(--blue-color);
+    border: none;
+    border-radius: 4px;
+    color: var(--white-color);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    position: relative;
+    cursor: pointer;
+}
+.subcribe-svg {
+    width: 24px;
+    height: 24px;
+    fill: var(--white-color);
+    position: absolute;
+    top: 13px;
+    right: 16px;
+}
+.ourteam-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.ourteam-list__link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+}
+.ourteam-list__link:hover{
+    background-color: var(--blue-color);
+    border-radius: 50%;
+}
+.ourteam-list__svg{
+    width: 20px;
+    height: 20px;
+    fill: var(--svg-color);
+}
+.ourteam-list__link:hover .ourteam-list__svg{
+    fill: var(--white-color);
 }
 .footer-right__section .ourteam-list__svg {
     fill: var(--white-color);
@@ -205,33 +289,4 @@ footer {
 }
 .footer-right__section .ourteam-list__link:hover {
     background-color: var(--blue-color);
-}
-.footer-right__section {
-    width: 206px;
-    padding-top: 12px;
-}
-.ourteam-list {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-}
-.ourteam-list__link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 44px;
-    height: 44px;
-}
-.ourteam-list__link:hover {
-    background-color: var(--blue-color);
-    border-radius: 50%;
-}
-.ourteam-list__svg {
-    width: 20px;
-    height: 20px;
-    fill: var(--svg-color);
-}
-.ourteam-list__link:hover .ourteam-list__svg {
-    fill: var(--white-color);
 }
