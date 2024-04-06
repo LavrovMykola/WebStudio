@@ -57,6 +57,21 @@ h2, h3, h4, ul, p, button {
     font-family: 'Roboto', sans-serif;
     line-height: 1.62;
     font-weight: 500;
+    position: relative;
+}
+.navigation:hover::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--blue-color);
+    position: absolute;
+    top: 45px;
+    left: 0;
+}
+.navigation:hover{
+    color: var(--blue-color);
 }
 .nav-list {
     display: flex;
@@ -115,6 +130,21 @@ h2{
     box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
     0px 4px 4px 0px rgba(0, 0, 0, 0.06),
     0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+}
+.overlay-box{
+    position: relative;
+}
+.overlay-text{
+    position: absolute;
+    padding: 63px 29px;
+    top: 0;
+    color: var(--white-color);
+    background-color: rgba(33, 150, 243, 0.9);
+    width: 370px;
+    height: 294px;
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
 }
 .title-portfolio{
     color: var(--title-color);
@@ -217,22 +247,22 @@ footer {
     width: 570px;
     margin: 12px 0 0 94px;
 }
-.subscribe-input {
+.subscribe-input{
     width: 358px;
     height: 50px;
     padding: 15px;
     background-color: transparent;
-    color: rgba(255, 255, 255, 0.6);
+    color:rgba(255, 255, 255, 0.6) ;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
     outline: none;
     cursor: pointer;
 }
-.subscribe-list {
+.subscribe-list{
     display: flex;
     gap: 12px;
 }
-.subscribe-btn {
+.subscribe-btn{
     width: 200px;
     height: 50px;
     background-color: var(--blue-color);
@@ -247,7 +277,7 @@ footer {
     position: relative;
     cursor: pointer;
 }
-.subcribe-svg {
+.subcribe-svg{
     width: 24px;
     height: 24px;
     fill: var(--white-color);
