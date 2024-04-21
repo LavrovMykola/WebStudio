@@ -8,6 +8,7 @@
     --box-color: #F5F4FA;
     --lightgray-color: lightgray;
     --svg-color: #AFB1B8;
+    --border-header: #ECECEC;
     --svg-footer: rgba(255, 255, 255, 0.1);
 
 }
@@ -37,6 +38,9 @@ h2, h3, h4, ul, p, button {
     align-items: center;
     flex-wrap: wrap;
 }
+.header{
+    border-bottom: 1px solid var(--border-header);
+}
 .web {
     color: var(--blue-color);
     font-family: 'Raleway', serif;
@@ -53,13 +57,34 @@ h2, h3, h4, ul, p, button {
     line-height: normal;
     letter-spacing: 0.78px;
 }
-.navigation {
+.navigation{
     font-family: 'Roboto', sans-serif;
     line-height: 1.62;
     font-weight: 500;
     position: relative;
 }
+.navigation::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--blue-color);
+    position: absolute;
+    top: 46px;
+    left: 0;
+    transition: width 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.navigation:hover{
+    color: var(--blue-color);
+}
 .navigation:hover::after{
+    width: 100%;
+}
+.current{
+    width: 0;
+}
+.current::after{
     content: '';
     display: block;
     width: 100%;
@@ -67,29 +92,27 @@ h2, h3, h4, ul, p, button {
     border-radius: 2px;
     background-color: var(--blue-color);
     position: absolute;
-    top: 45px;
+    top: 46px;
     left: 0;
 }
-.navigation:hover{
-    color: var(--blue-color);
-}
-.nav-list {
+.nav-list{
     display: flex;
     gap: 55px;
 }
-.header-list {
+.header-list{
     display: flex;
     gap: 55px;
 }
-a {
+a{
     text-decoration: none;
     color: var(--title-color);
     line-height: normal;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-a:hover {
+a:hover{
     color: var(--blue-color);
 }
-.contacts-header {
+.contacts-header{
     color: var(--text-color);
     font-family: 'Roboto', sans-serif;
     line-height: normal;
@@ -102,8 +125,9 @@ a:hover {
 .contacts-header:hover .header-svg {
     fill: var(--blue-color);
 }
-.header-svg {
+.header-svg{
     fill: var(--text-color);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* Main------------------------------------------------------------ */
 .main-portoflio{
@@ -132,6 +156,7 @@ h2{
     box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
     0px 4px 4px 0px rgba(0, 0, 0, 0.06),
     0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .thumb{
     position: relative;
@@ -157,7 +182,7 @@ h2{
     line-height: 1.56;
     letter-spacing: 0.03em;
     transform: translatey(100%);
-    transition: transform 1s ease;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     opacity: 0;
 }
 .title-portfolio{
@@ -201,6 +226,7 @@ h2{
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
     0px 1px 2px 0px rgba(0, 0, 0, 0.08),
     0px 3px 1px 0px rgba(0, 0, 0, 0.10);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .posters-list{
     display: flex;
@@ -315,6 +341,7 @@ footer {
 .ourteam-list__link:hover{
     background-color: var(--blue-color);
     border-radius: 50%;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .ourteam-list__svg{
     width: 20px;

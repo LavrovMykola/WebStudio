@@ -36,6 +36,9 @@ h1, h2, h3, h4, h5, h6, ul, p, button {
     align-items: center;
     flex-wrap: wrap;
 }
+.header{
+    border-bottom: 1px solid #ECECEC;
+}
 .web{
     color: var(--blue-color);
     font-family: 'Raleway',serif;
@@ -58,7 +61,28 @@ h1, h2, h3, h4, h5, h6, ul, p, button {
     font-weight: 500;
     position: relative;
 }
+.navigation::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--blue-color);
+    position: absolute;
+    top: 46px;
+    left: 0;
+    transition: width 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.navigation:hover{
+    color: var(--blue-color);
+}
 .navigation:hover::after{
+    width: 100%;
+}
+.current{
+    width: 0;
+}
+.current::after{
     content: '';
     display: block;
     width: 100%;
@@ -66,11 +90,8 @@ h1, h2, h3, h4, h5, h6, ul, p, button {
     border-radius: 2px;
     background-color: var(--blue-color);
     position: absolute;
-    top: 45px;
+    top: 46px;
     left: 0;
-}
-.navigation:hover{
-    color: var(--blue-color);
 }
 .nav-list{
     display: flex;
@@ -84,6 +105,7 @@ a{
     text-decoration: none;
     color: var(--title-color);
     line-height: normal;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 a:hover{
     color: var(--blue-color);
@@ -103,6 +125,7 @@ a:hover{
 }
 .header-svg{
     fill: var(--text-color);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* Main------------------------------------------------------------ */
 ul {
@@ -421,6 +444,7 @@ h2{
 .ourteam-list__link:hover{
     background-color: var(--blue-color);
     border-radius: 50%;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .ourteam-list__svg{
     width: 20px;
@@ -457,11 +481,13 @@ h2{
     height: 92px;
     border: 1px var(--svg-color) solid;
     border-radius: 4px;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-list__svg{
     fill: var(--svg-color);
     width: 106px;
     height: 60px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-list__link:hover {
     border: 1px var(--blue-color) solid;
