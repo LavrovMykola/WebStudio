@@ -226,7 +226,8 @@ h2{
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
     0px 1px 2px 0px rgba(0, 0, 0, 0.08),
     0px 3px 1px 0px rgba(0, 0, 0, 0.10);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .posters-list{
     display: flex;
@@ -285,7 +286,6 @@ footer {
 }
 .footer-right__section {
     width: 570px;
-    margin: 12px 0 0 94px;
 }
 .subscribe-input{
     width: 358px;
@@ -304,7 +304,10 @@ footer {
 }
 .subscribe-btn{
     width: 200px;
+    display: flex;
+    justify-content: flex-start;
     height: 50px;
+    padding: 13px 28px;
     background-color: var(--blue-color);
     border: none;
     border-radius: 4px;
@@ -323,12 +326,13 @@ footer {
     fill: var(--white-color);
     position: absolute;
     top: 13px;
-    right: 16px;
+    right: 28px;
 }
 .ourteam-list{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
+    margin-right: 13px;
     gap: 10px;
 }
 .ourteam-list__link{
