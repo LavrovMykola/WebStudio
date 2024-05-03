@@ -15,6 +15,7 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
     <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 
@@ -44,7 +45,7 @@
     </header>
     <main class="main">
         <section class="main-background">
-            <div class="container">
+            <div class="container" data-aos="zoom-out-up">
                 <h1 id="caption">Ефективне рішення для <br> вашого бізнесу</h1>
                 <button type="button" id="button" data-modal-open>Замовити послугу</button>
                 <div class="backdrop is-hidden" data-modal>
@@ -97,7 +98,7 @@
             </div>
         </section>
         <section class="instruction">
-            <div class="container">
+            <div class="container" data-aos="zoom-out">
                 <ul class="list-box-instruction">
                     <li class="box-instruction">
                         <h4 class="title-instruction">УВАГА ДО ДЕТАЛЕЙ</h4>
@@ -122,8 +123,8 @@
             </div>
         </section>
         <section class="what-we-do">
-            <div class="container">
-                <h2 class="what-we-do-title">Чим ми займаємося:</h2>
+            <div class="container" data-aos="zoom-in-down">
+                <h2 class="what-we-do-title animate">Чим ми займаємося:</h2>
                 <ul class="list-what-we-do">
                     <li>
                         <figure class="keystroke-box">
@@ -147,8 +148,8 @@
             </div>
         </section>
         <section class="ourteam">
-            <div class="container">
-                <h2 class="ourteam-title">Наша команда</h2>
+            <div class="container" data-aos="zoom-in-down">
+                <h2 class="ourteam-title animate">Наша команда</h2>
                 <ul class="list-ourteam-box">
                     <li class="ourteam-box">
                         <img class="img-small" src="./img.webstudio/person1.jpg" alt="person1">
@@ -294,8 +295,8 @@
             </div>
         </section>
         <section class="clients">
-            <div class="container">
-                <h2 class="clients-title">Постійні клієнти</h2>
+            <div class="container" data-aos="zoom-in-down">
+                <h2 class="clients-title animate">Постійні клієнти</h2>
                 <ul class="clients-list">
 
                     <li class="clients-list__item">
@@ -415,7 +416,12 @@
             </section>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="./js/modal.js"></script>
+
 </body>
 
 </html>
