@@ -1,21 +1,26 @@
-.what-we-do > .container {
+.occupation > .container {
     padding: 94px 15px;
 }
-.what-we-do-title {
+.occupation__title {
     padding-bottom: 50px;
     font-size: 36px;
     text-align: center;
  }
-.list-what-we-do {
+.occupation__list{
     display: flex;
     flex-wrap: wrap;
     column-gap: 30px;
     justify-content: space-between;
 }
-.keystroke-box{
+.occupation__img {
+    width: 370px;
+    height: 294px;
+    background-color: var(--lightgray-color);
+}
+.keystroke__box{
     position: relative;
 }
-.keystroke-title{
+.keystroke__title{
     display: flex;
     justify-content: center;
     align-items: center;
