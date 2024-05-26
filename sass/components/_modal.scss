@@ -2,12 +2,12 @@
     position: fixed;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: getColors('background-backdrop');
     top: 0;
     left: 0;
     z-index: 4;
     opacity: 1;
-    transition: opacity 1000ms var(--cubic-bezier);
+    transition: opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .is-hidden {
     visibility: hidden;
@@ -19,10 +19,10 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
-    transition: transform 250ms var(--cubic-bezier);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     width: 528px;
     height: 581px;
-    background-color: var(--white-color);
+    background-color: getColors('white-color');
     padding: 40px;
     z-index: 5;
 }
@@ -31,25 +31,25 @@
 }
 .modal__title{
     text-align: center;
-    color: var(--title-color);
+    color: getColors('title-color');
     font-weight: 700;
     font-size: 20px;
     letter-spacing: 0.03em;
     margin-bottom: 12px;
 }
-.modal__list{
+.modal-list{
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
 }
-.modal__label{
+.modal-list__label{
     position: relative;
     letter-spacing: 0.01em;
     font-size: 12px;
     padding-right: 7px;
 }
-.modal__input{
-    border: 1px solid rgba(33, 33, 33, 0.2);
+.modal-list__input{
+    border: 1px solid getColors('modal-border');
     border-radius: 4px;
     width: 100%;
     padding: 12px 20px 12px 42px;
@@ -57,80 +57,80 @@
     outline: none;
     cursor: pointer;
 }
-.modal__svg {
+.modal-list__svg {
     position: absolute;
     left: 12px;
     top: 31px;
     width: 15px;
     height: 15px;
 }
-.modal__label:hover{
-    border-color: var(--blue-color);
+.modal-list__label:hover{
+    border-color: getColors('blue-color');
 }
-.modal__input:hover + .modal__svg{
-    fill: var(--blue-color);
+.modal-list__input:hover + .modal-list__svg{
+    fill: getColors('blue-color');
 }
-.modal__textarea{
+.modal-list__textarea{
     resize: none;
     width: 100%;
     height: 120px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
+    border: 1px solid getColors('modal-border');
     border-radius: 4px;
     padding: 12px 16px;
     margin-top: 4px;
     outline: none;
     cursor: pointer;
 }
-.modal__checkbox{
+.modal-list__checkbox{
     width: 16px;
     height: 15px;
     cursor: pointer;
 }
-.modal__text{
+.modal-list__text{
     text-align: center;
     line-height: 1.71;
     letter-spacing: 0.03em;
     margin-bottom: 30px;
 }
-.modal__link{
-    color: var(--blue-color);
+.modal-list__link{
+    color: getColors('blue-color');
     text-decoration: underline;
 }
-.modal__btn--send{
+.modal__btn-send{
     display: block;
     width: 200px;
     height: 50px;
     border: none;
     margin: 0 auto;
     cursor: pointer;
-    color: var(--white-color);
-    background-color: var(--blue-color);
+    color: getColors('white-color');
+    background-color: getColors('blue-color');
     font-size: 16px;
     font-weight: 700;
     line-height: 1.87;
     letter-spacing: 0.06em;
     border-radius: 4px;
-    box-shadow: 0 4px 4px 0 var(--shadow-back);
+    box-shadow: 0 4px 4px 0 getColors('shadow-back');;
 }
-.modal__btn--close{
+.modal__btn-close{
     position: absolute;
     top: 8px;
     right: 8px;
     border-radius: 50%;
-    background-color: var(--white-color);
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color:  getColors('white-color');
+    border: 1px solid getColors('btn-close-border');;
     width: 30px;
     height: 30px;
     cursor: pointer;
 }
-.modal__svg--close{
-    fill: var(--black-color);
+.modal-list__svg-close{
+    fill: getColors('black-color');
     width: 16px;
     height: 16px;
     position: absolute;
     top: 6px;
     right: 6px;
 }
-.modal__svg--close:hover{
-    fill: var(--blue-color);
+.modal-list__svg-close:hover{
+    fill: getColors('blue-color');
 }

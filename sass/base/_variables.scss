@@ -1,15 +1,35 @@
-:root{
-    --blue-color:#2196F3;
-    --black-color:black;
-    --white-color:white;
-    --title-color:#212121;
-    --text-color:#757575;
-    --background-color:#2F303A;
-    --box-color: #F5F4FA;
-    --lightgray-color: lightgray;
-    --svg-color: #AFB1B8;
-    --svg-footer: rgba(255, 255, 255, 0.1);
-    --header-line: #ECECEC;
-    --cubic-bezier:  cubic-bezier(0.4, 0, 0.2, 1);
-    --shadow-back: rgba(0, 0, 0, 0.15);
+$colors:(
+  'black-color':black,
+  'white-color':white,
+  'lightgray-color':lightgray,
+  'blue-color':#2196F3,
+  'title-color':#212121,
+  'text-color':#757575,
+  'background-color':#2F303A,
+  'box-color': #F5F4FA,
+  'poster-border-color':#EEEEEE,
+  'svg-color': #AFB1B8,
+  'header-line': #ECECEC,
+  'send-input-color': rgba(255, 255, 255, 0.6),
+  'send-input-border': rgba(255, 255, 255, 0.3),
+  'svg-footer': rgba(255, 255, 255, 0.1),
+  'shadow-back': rgba(0, 0, 0, 0.15),
+  'background-backdrop': rgba(0, 0, 0, 0.5),
+  'backround-overlay': rgba(33, 150, 243, 0.9),
+  'btn-close-border': rgba(0, 0, 0, 0.1),
+  'modal-border':rgba(33, 33, 33, 0.2),
+  'background-keystroke': rgb(47, 48, 58, 0.8),
+);
+
+@function getColors($key) {
+  @return map-get($colors, $key);
+}
+
+$fonts: (
+  'font-roboto':#{"'Roboto', sans-serif"},
+  'font-raleway':#{"'Raleway', serif"} ,
+);
+
+@function getFonts($key) {
+  @return map-get($fonts, $key);
 }

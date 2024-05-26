@@ -1,48 +1,48 @@
 .instruction > .container{
     padding: 94px 15px 0;
 }
-.instruction__list{
+.instruction-list{
     display: flex;
     flex-wrap: wrap;
     column-gap: 30px;
 }
-.instruction__item{
+.instruction-list__item{
     display: block;
     flex-wrap: wrap;
     width: 270px;
 }
-.instruction__title{
+.instruction-list__title{
     margin: 30px 0 10px;
-    color: var(--title-color);
-    font-family: "Roboto", sans-serif;
+    color: getColors('title-color');
+    font-family: getFonts('font-roboto');
     font-weight: 700;
     line-height: normal;
     letter-spacing: 0.42px;
 }
-.instruction__text{
-    color: var(--text-color);
+.instruction-list__text{
+    color: getColors('text-color');
     font-weight: 400;
     line-height: 1.71;
     letter-spacing: 0.42px;
 }
-.instruction__item::before{
+.instruction-list__item::before{
     content: '';
     display: block;
-    background-color: var(--box-color);
+    background-color: getColors('box-color');
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 4px;
     height: 120px;
 }
-.instruction__item:nth-child(1)::before{
+.instruction-list__item:nth-child(1)::before{
     background-image: url('../img.webstudio/antenna.svg');
 }
-.instruction__item:nth-child(2)::before {
+.instruction-list__item:nth-child(2)::before {
     background-image: url('../img.webstudio/clock.svg');
 }
-.instruction__item:nth-child(3)::before {
+.instruction-list__item:nth-child(3)::before {
     background-image: url('../img.webstudio/diagram.svg');
 }
-.instruction__item:nth-child(4)::before {
+.instruction-list__item:nth-child(4)::before {
     background-image: url('../img.webstudio/astronaut.svg');
 }

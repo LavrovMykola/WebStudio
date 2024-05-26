@@ -6,29 +6,29 @@
     font-size: 36px;
     text-align: center;
  }
-.occupation__list{
+.occupation-list{
     display: flex;
     flex-wrap: wrap;
     column-gap: 30px;
     justify-content: space-between;
 }
-.occupation__img {
-    width: 370px;
-    height: 294px;
-    background-color: var(--lightgray-color);
-}
-.keystroke__box{
+.keystroke-box{
     position: relative;
 }
-.keystroke__title{
+.keystroke-box__img {
+    width: 370px;
+    height: 294px;
+    background-color: getColors('lightgray-color');
+}
+.keystroke-box__title{
     display: flex;
     justify-content: center;
     align-items: center;
     text-transform: uppercase;
     position: absolute;
     bottom: 0;
-    color: var(--white-color);
-    background-color: rgb(47, 48, 58, 0.8);
+    color: getColors('white-color');
+    background-color: getColors('background-keystroke');
     width: 370px;
     height: 70px;
 }

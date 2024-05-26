@@ -2,12 +2,12 @@ ul {
     list-style-type: none;
   }
 h2{
-    font-family: 'Roboto', sans-serif;
+    font-family: getFonts('font-roboto');
     font-weight: 700;
-    color: var(--title-color);
+    color: getColors('title-color');
 }
 .mainstream{
-    background-color: var(--background-color);
+    background-color: getColors('background-color');;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.40),
     rgba(47, 48, 58, 0.40)), url('../img.webstudio/overlay.jpg'); 
     background-size: cover;
@@ -16,23 +16,24 @@ h2{
     padding: 200px 0;
     margin: 0 auto;
 }
-#caption{
-    color: var(--white-color);
+.mainstream__caption{
+    color: getColors('white-color');
     text-align: center;
-    font-family: 'Roboto', sans-serif;
+    font-family: getFonts('font-roboto');
     font-size: 44px;
     font-weight: 900;
     line-height: 1.36;
-    letter-spacing: 2.64px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
     padding-bottom: 30px;
 }
-#button{ 
-    background-color: var(--blue-color);
-    color: var(--white-color);
+.mainstream__button{ 
+    background-color: getColors('blue-color');
+    color: getColors('white-color');
     width: 216px;
     height: 50px;
     text-align: center;
-    font-family: 'Roboto', sans-serif;
+    font-family: getFonts('font-roboto');
     font-size: 16px;
     font-weight: 700;
     line-height: 1.87;
@@ -42,5 +43,6 @@ h2{
     padding: 10px 16px;
     display: block;
     margin: 0 auto;
-    box-shadow: 0px 4px 4px 0px var(--shadow-back);
+    box-shadow: 0px 4px 4px 0px getColors('shadow-back');;
+    cursor: pointer;
 }

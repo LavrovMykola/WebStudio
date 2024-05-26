@@ -13,16 +13,16 @@ ul {
     object-position: center;
 }
 h2{
-    color: var(--title-color);
+    color: getColors('title-color');
 }
 .pushbuttons{
     text-align: center;
     margin-bottom: 50px;
 }
-.portfolio__button{
+.pushbuttons-div__button{
     margin-right: 8px;
     padding: 6px 22px;
-    color: var(--title-color);
+    color: getColors('title-color');
     box-sizing: border-box;
     max-width: 130px;
     height: 38px;
@@ -32,72 +32,72 @@ h2{
     border: none;
     border-radius: 4px;
     font-weight: 500;
-    font-family: 'Roboto', sans-serif;
+    font-family: getFonts('font-roboto');
 }
-.portfolio__button:hover{
-    background-color: var(--blue-color);
-    color: var(--white-color);
+.pushbuttons-div__button:hover{
+    background-color: getColors('blue-color');
+    color: getColors('white-color');
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
     0px 1px 2px 0px rgba(0, 0, 0, 0.08),
     0px 3px 1px 0px rgba(0, 0, 0, 0.10);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.posters__list{
+.posters-list{
     display: flex;
     flex-wrap: wrap;
     row-gap: 50px;
     justify-content: space-between;
 }
-.posters__item{
+.posters-list__item{
     flex-basis: calc((100% - 370px) / 3);
-    border: 1px solid #EEE;
+    border: 1px solid getColors('poster-border-color');
 }
-.posters__item:hover{
+.posters-list__item:hover{
     box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
     0px 4px 4px 0px rgba(0, 0, 0, 0.06),
     0px 1px 1px 0px rgba(0, 0, 0, 0.12);
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.thumb{
+.posters-list__thumb{
     position: relative;
     width: 370px;
     height: 294px;
     overflow: hidden;
 }
-.overlay__box{
+.overlay{
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     padding: 63px 29px;
-    background-color: rgba(33, 150, 243, 0.9);
+    background-color: getColors('backround-overlay');
     transform: translatey(100%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.posters__item:hover .overlay__box {
+.posters-list__item:hover .overlay {
     transform: translatey(0);
 }
 .overlay__text{
-    color: var(--white-color);
+    color: getColors('white-color');
     font-size: 18px;
     line-height: 1.56;
     letter-spacing: 0.03em;
 }
-.portfolio__title{
-    color: var(--title-color);
+.posters-list__title{
+    color: getColors('title-color');
     font-size: 18px;
     line-height: 2;
     letter-spacing: 1.08px;
     font-weight: 700;
-    font-family: 'Roboto', sans-serif;
+    font-family: getColors('font-roboto');
     margin: 20px 24px 4px;
 }
-.portfolio__text{
-    color: var(--text-color);
+.posters-list__text{
+    color: getColors('text-color');
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.48px;
-    margin: 0 24px 50px;
+    margin: 0 24px 20px;
 }
