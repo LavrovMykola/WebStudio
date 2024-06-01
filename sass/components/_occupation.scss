@@ -1,34 +1,34 @@
 .occupation > .container {
-    padding: 94px 15px;
+  padding: 94px 15px;
 }
 .occupation__title {
-    padding-bottom: 50px;
-    font-size: 36px;
-    text-align: center;
- }
-.occupation-list{
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 30px;
-    justify-content: space-between;
+  padding-bottom: 50px;
+  font-size: 36px;
+  text-align: center;
 }
-.keystroke-box{
-    position: relative;
+.occupation-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 30px;
+  justify-content: space-between;
 }
-.keystroke-box__img {
+.keystroke-box {
+  position: relative;
+  &__img {
     width: 370px;
     height: 294px;
-    background-color: getColors('lightgray-color');
-}
-.keystroke-box__title{
+    background-color: getColors("lightgray-color");
+  }
+  &__title {
     display: flex;
     justify-content: center;
     align-items: center;
     text-transform: uppercase;
     position: absolute;
     bottom: 0;
-    color: getColors('white-color');
-    background-color: getColors('background-keystroke');
+    color: getColors("white-color");
+    background-color: getColors("background-keystroke");
     width: 370px;
     height: 70px;
+  }
 }

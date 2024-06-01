@@ -1,48 +1,48 @@
-.instruction > .container{
-    padding: 94px 15px 0;
+.instruction > .container {
+  padding: 94px 15px 0;
 }
-.instruction-list{
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 30px;
-}
-.instruction-list__item{
+.instruction-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 30px;
+  &__item {
     display: block;
     flex-wrap: wrap;
     width: 270px;
-}
-.instruction-list__title{
+  }
+  &__title {
     margin: 30px 0 10px;
-    color: getColors('title-color');
-    font-family: getFonts('font-roboto');
+    color: getColors("title-color");
+    font-family: getFonts("font-roboto");
     font-weight: 700;
     line-height: normal;
     letter-spacing: 0.42px;
-}
-.instruction-list__text{
-    color: getColors('text-color');
+  }
+  &__text {
+    color: getColors("text-color");
     font-weight: 400;
     line-height: 1.71;
     letter-spacing: 0.42px;
-}
-.instruction-list__item::before{
-    content: '';
+  }
+  &__item::before {
+    content: "";
     display: block;
-    background-color: getColors('box-color');
+    background-color: getColors("box-color");
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 4px;
     height: 120px;
-}
-.instruction-list__item:nth-child(1)::before{
-    background-image: url('../img.webstudio/antenna.svg');
-}
-.instruction-list__item:nth-child(2)::before {
-    background-image: url('../img.webstudio/clock.svg');
-}
-.instruction-list__item:nth-child(3)::before {
-    background-image: url('../img.webstudio/diagram.svg');
-}
-.instruction-list__item:nth-child(4)::before {
-    background-image: url('../img.webstudio/astronaut.svg');
+  }
+  &__item:nth-child(1)::before {
+    background-image: url("../img.webstudio/antenna.svg");
+  }
+  &__item:nth-child(2)::before {
+    background-image: url("../img.webstudio/clock.svg");
+  }
+  &__item:nth-child(3)::before {
+    background-image: url("../img.webstudio/diagram.svg");
+  }
+  &__item:nth-child(4)::before {
+    background-image: url("../img.webstudio/astronaut.svg");
+  }
 }
