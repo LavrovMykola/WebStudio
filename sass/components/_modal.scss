@@ -35,6 +35,8 @@
     font-size: 20px;
     letter-spacing: 0.03em;
     margin-bottom: 12px;
+    @include text(20px, 700, 1.71, 0.03em, center);
+
   }
   &__btn-send {
     display: block;
@@ -45,10 +47,7 @@
     cursor: pointer;
     color: getColors("white-color");
     background-color: getColors("blue-color");
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 1.87;
-    letter-spacing: 0.06em;
+    @include text(16px, 700, 1.87, 0.06em, center);
     border-radius: 4px;
     box-shadow: 0 4px 4px 0 getColors("shadow-back");
   }
@@ -113,9 +112,7 @@
     cursor: pointer;
   }
   &__text {
-    text-align: center;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
+    @include text(14px, 400, 1.71, 0.03em, center);
     margin-bottom: 30px;
   }
   &__link {

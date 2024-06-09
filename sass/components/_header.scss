@@ -3,18 +3,12 @@
   & > .container {
     padding: 24px 15px 25px;
     margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+    @extend %flex-space-between;
   }
 }
 .logo {
   font-family: getFonts("font-raleway");
-  font-size: 26px;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 0.78px;
+  @include text(26px, 700, normal, 0.78px, center);
   color: getColors("blue-color");
 }
 .header__web--studio {
@@ -76,12 +70,10 @@ a:hover {
   &__link {
     color: getColors("text-color");
     font-family: getFonts("font-roboto");
-    line-height: normal;
-    font-weight: 500;
-    display: flex;
+    @include text(14px, 500, normal, 0.02em, center);
     gap: 10px;
-    justify-content: center;
-    align-items: center;
+    @extend %flex-center;
+
   }
   &__link:hover &__svg {
     fill: getColors("blue-color");

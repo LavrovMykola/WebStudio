@@ -4,13 +4,11 @@
 .occupation__title {
   padding-bottom: 50px;
   font-size: 36px;
-  text-align: center;
+  @extend %flex-center;
 }
 .occupation-list {
-  display: flex;
-  flex-wrap: wrap;
   column-gap: 30px;
-  justify-content: space-between;
+  @extend %flex-space-between;
 }
 .keystroke-box {
   position: relative;
@@ -20,9 +18,7 @@
     background-color: getColors("lightgray-color");
   }
   &__title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %flex-center;
     text-transform: uppercase;
     position: absolute;
     bottom: 0;

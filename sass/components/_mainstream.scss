@@ -7,19 +7,15 @@ h2 {
   background-color: getColors("background-color");
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),
  rgba(47, 48, 58, 0.4)),url("../img.webstudio/overlay.jpg");
-  background-size: cover;
+  @extend %background;
   width: 100%;
   height: 600px;
   padding: 200px 0;
   margin: 0 auto;
   &__caption {
     color: getColors("white-color");
-    text-align: center;
     font-family: getFonts("font-roboto");
-    font-size: 44px;
-    font-weight: 900;
-    line-height: 1.36;
-    letter-spacing: 0.06em;
+    @include text(44px, 900, 1.36, 0.06em, center);
     text-transform: uppercase;
     padding-bottom: 30px;
   }
@@ -28,12 +24,8 @@ h2 {
     color: getColors("white-color");
     width: 216px;
     height: 50px;
-    text-align: center;
     font-family: getFonts("font-roboto");
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 1.87;
-    letter-spacing: 0.96px;
+    @include text(16px, 700, 1.87, 0.06px, center);
     border: none;
     border-radius: 4px;
     padding: 10px 16px;

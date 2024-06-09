@@ -28,24 +28,17 @@
 }
 .footer-connect__title,
 .footer-subscribe__title {
-  font-weight: 700;
-  font-size: 14px;
-  letter-spacing: 0.03em;
-  margin-bottom: 20px;
+  @include text(14px, 700, normal, 0.03em, left);
   text-transform: uppercase;
 }
 .footer-connect {
   width: 300px;
 }
 .footer-networks {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+  @extend %flex-start;
   gap: 10px;
   &__link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @extend %flex-center;
     width: 44px;
     height: 44px;
     background-color: getColors("svg-footer");
@@ -83,8 +76,7 @@
   }
   &__btn {
     width: 200px;
-    display: flex;
-    justify-content: flex-start;
+    @extend %flex-start;
     height: 50px;
     padding: 13px 28px;
     background-color: getColors("blue-color");
@@ -92,10 +84,7 @@
     border-radius: 4px;
     color: var(--white-color);
     box-shadow: 0 4px 4px 0 getColors("shadow-back");
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.87;
-    letter-spacing: 0.06em;
+    @include text(16px, 700, 1.87, 0.06em, center);
     position: relative;
     cursor: pointer;
   }

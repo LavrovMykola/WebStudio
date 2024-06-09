@@ -2,8 +2,7 @@
   padding: 94px 15px 0;
 }
 .instruction-list {
-  display: flex;
-  flex-wrap: wrap;
+    @extend %flex-center;
   column-gap: 30px;
   &__item {
     display: block;
@@ -14,15 +13,13 @@
     margin: 30px 0 10px;
     color: getColors("title-color");
     font-family: getFonts("font-roboto");
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    @include text(14px, 700, 1.71, 0.03em, left);
+
   }
   &__text {
     color: getColors("text-color");
-    font-weight: 400;
-    line-height: 1.71;
-    letter-spacing: 0.42px;
+    @include text(14px, 400, 1.71, 0.03em, left);
   }
   &__item::before {
     content: "";

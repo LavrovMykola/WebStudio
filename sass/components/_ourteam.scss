@@ -6,25 +6,21 @@
   }
   &__title {
     font-size: 36px;
-    text-align: center;
+    @extend %flex-center;
     padding: 0 0 50px;
   }
 }
 .ourteam-list {
-  display: flex;
-  flex-wrap: wrap;
+  @extend %flex-space-between;
   column-gap: 30px;
-  justify-content: space-between;
   &__item {
-    display: block;
-    flex-wrap: wrap;
-    text-align: center;
+    @extend %block-center;
     width: 270px;
     background-color: getColors("white-color");
     padding-bottom: 30px;
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
-    0px 1px 1px 0px rgba(0, 0, 0, 0.14),
-    0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+      0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+      0px 1px 3px 0px rgba(0, 0, 0, 0.12);
   }
   &__img {
     width: 270px;
@@ -41,21 +37,15 @@
   }
   &__text {
     color: getColors("text-color");
-    font-weight: 400;
-    line-height: 1.71;
-    letter-spacing: 0.42px;
+    @include text(16px, 400, 1.71, 0.42px, center);
     margin-bottom: 16px;
   }
 }
 .networks-list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @extend %flex-center;
   gap: 10px;
   &__link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @extend %flex-center;
     width: 44px;
     height: 44px;
   }
