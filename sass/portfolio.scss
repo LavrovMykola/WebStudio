@@ -1,11 +1,10 @@
 @import "./base/common";
-
+@import "./utils/mixins";
+@import "./utils/placeholders";
+@import "./utils/variables";
 @import "./components/header";
 
 @import "./components/portfolio/portfolio-main";
 
 @import "./components/footer";
 
-@import "./utils/mixins";
-@import "./utils/placeholders";
-@import "./utils/variables";

@@ -1,7 +1,7 @@
 body {
   font-size: 14px;
   letter-spacing: 0.28px;
-  color: #757575;
+  color: getColors("text-color");
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -13,7 +13,7 @@ h1, h2, h3, h4, h5, h6, ul, p, button {
 }
 
 h2 {
-  color: #212121;
+  color: getColors("title-color");
 }
 
 ul {
@@ -30,6 +30,36 @@ a {
   padding: 0 15px;
 }
 
+.footer-networks__link, .contacts-list__link {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.posters-list, .header > .container {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-send__btn, .footer-networks {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.portfolio__img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
 .header {
   border-bottom: 1px solid #ECECEC;
 }
@@ -44,6 +74,7 @@ a {
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.78px;
+  text-align: center;
   color: #2196F3;
 }
 
@@ -112,8 +143,11 @@ a:hover {
 .contacts-list__link {
   color: #757575;
   font-family: 'Roboto', sans-serif;
-  line-height: normal;
+  font-size: 14px;
   font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.02em;
+  text-align: center;
   gap: 10px;
 }
 .contacts-list__link:hover .contacts-list__svg {
@@ -180,9 +214,10 @@ a:hover {
 .posters-list__title {
   color: #212121;
   font-size: 18px;
+  font-weight: 700;
   line-height: 2;
   letter-spacing: 1.08px;
-  font-weight: 700;
+  text-align: left;
   margin: 20px 24px 4px;
 }
 .posters-list__text {
@@ -190,6 +225,11 @@ a:hover {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.48px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  text-align: left;
   margin: 0 24px 20px;
 }
 
@@ -242,11 +282,13 @@ a:hover {
 
 .footer-connect__title,
 .footer-subscribe__title {
-  font-weight: 700;
   font-size: 14px;
+  font-weight: 700;
+  line-height: normal;
   letter-spacing: 0.03em;
-  margin-bottom: 20px;
+  text-align: left;
   text-transform: uppercase;
+  margin: 13px 0px 20px;
 }
 
 .footer-connect {
@@ -302,10 +344,11 @@ a:hover {
   border-radius: 4px;
   color: var(--white-color);
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-  font-weight: 700;
   font-size: 16px;
+  font-weight: 700;
   line-height: 1.87;
   letter-spacing: 0.06em;
+  text-align: center;
   position: relative;
   cursor: pointer;
 }
@@ -316,34 +359,4 @@ a:hover {
   position: absolute;
   top: 13px;
   right: 28px;
-}
-
-.contacts-list__link, .footer-networks__link {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-
-.header > .container, .posters-list {
-  display: flex;
-  flex-wrap: wrap;
-  text-align: center;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.footer-networks, .footer-send__btn {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-.portfolio__img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
 }/*# sourceMappingURL=portfolio.css.map */

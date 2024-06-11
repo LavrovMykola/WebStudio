@@ -1,4 +1,7 @@
 @import "./base/common";
+@import "./utils/mixins";
+@import "./utils/placeholders";
+@import "./utils/variables";
 
 @import "./components/header";
 
@@ -11,6 +14,3 @@
 
 @import "./components/footer";
 
-@import "./utils/mixins";
-@import "./utils/placeholders";
-@import "./utils/variables";

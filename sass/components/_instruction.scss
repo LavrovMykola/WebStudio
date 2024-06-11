@@ -15,7 +15,6 @@
     font-family: getFonts("font-roboto");
     text-transform: uppercase;
     @include text(14px, 700, 1.71, 0.03em, left);
-
   }
   &__text {
     color: getColors("text-color");

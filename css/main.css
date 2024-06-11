@@ -1,7 +1,7 @@
 body {
   font-size: 14px;
   letter-spacing: 0.28px;
-  color: #757575;
+  color: getColors("text-color");
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -13,7 +13,7 @@ h1, h2, h3, h4, h5, h6, ul, p, button {
 }
 
 h2 {
-  color: #212121;
+  color: getColors("title-color");
 }
 
 ul {
@@ -30,6 +30,39 @@ a {
   padding: 0 15px;
 }
 
+.footer-networks__link, .clients-list__link, .clients-list, .networks-list__link, .networks-list, .ourteam__title, .keystroke-box__title, .occupation__title, .instruction-list, .contacts-list__link {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.ourteam-list__item {
+  display: block;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.ourteam-list, .occupation-list, .header > .container {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-send__btn, .footer-networks {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.mainstream {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .header {
   border-bottom: 1px solid #ECECEC;
 }
@@ -44,6 +77,7 @@ a {
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.78px;
+  text-align: center;
   color: #2196F3;
 }
 
@@ -112,8 +146,11 @@ a:hover {
 .contacts-list__link {
   color: #757575;
   font-family: 'Roboto', sans-serif;
-  line-height: normal;
+  font-size: 14px;
   font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.02em;
+  text-align: center;
   gap: 10px;
 }
 .contacts-list__link:hover .contacts-list__svg {
@@ -140,12 +177,12 @@ h2 {
 }
 .mainstream__caption {
   color: white;
-  text-align: center;
   font-family: 'Roboto', sans-serif;
   font-size: 44px;
   font-weight: 900;
   line-height: 1.36;
   letter-spacing: 0.06em;
+  text-align: center;
   text-transform: uppercase;
   padding-bottom: 30px;
 }
@@ -154,12 +191,12 @@ h2 {
   color: white;
   width: 216px;
   height: 50px;
-  text-align: center;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: 700;
   line-height: 1.87;
-  letter-spacing: 0.96px;
+  letter-spacing: 0.06px;
+  text-align: center;
   border: none;
   border-radius: 4px;
   padding: 10px 16px;
@@ -209,6 +246,11 @@ h2 {
   font-size: 20px;
   letter-spacing: 0.03em;
   margin-bottom: 12px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-align: center;
 }
 .modal__btn-send {
   display: block;
@@ -223,6 +265,7 @@ h2 {
   font-weight: 700;
   line-height: 1.87;
   letter-spacing: 0.06em;
+  text-align: center;
   border-radius: 4px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
@@ -288,9 +331,11 @@ h2 {
   cursor: pointer;
 }
 .modal-list__text {
-  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  text-align: center;
   margin-bottom: 30px;
 }
 .modal-list__link {
@@ -326,15 +371,20 @@ h2 {
   margin: 30px 0 10px;
   color: #212121;
   font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
   font-weight: 700;
-  line-height: normal;
-  letter-spacing: 0.42px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-align: left;
 }
 .instruction-list__text {
   color: #757575;
+  font-size: 14px;
   font-weight: 400;
   line-height: 1.71;
-  letter-spacing: 0.42px;
+  letter-spacing: 0.03em;
+  text-align: left;
 }
 .instruction-list__item::before {
   content: "";
@@ -427,9 +477,11 @@ h2 {
 }
 .ourteam-list__text {
   color: #757575;
+  font-size: 16px;
   font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.42px;
+  text-align: center;
   margin-bottom: 16px;
 }
 
@@ -460,10 +512,10 @@ h2 {
 .clients__title {
   color: #212121;
   font-family: 'Roboto', sans-serif;
+  font-size: 36px;
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.42px;
-  font-size: 36px;
   text-align: center;
   padding: 0 0 50px;
 }
@@ -522,11 +574,13 @@ h2 {
 
 .footer-connect__title,
 .footer-subscribe__title {
-  font-weight: 700;
   font-size: 14px;
+  font-weight: 700;
+  line-height: normal;
   letter-spacing: 0.03em;
-  margin-bottom: 20px;
+  text-align: left;
   text-transform: uppercase;
+  margin: 13px 0px 20px;
 }
 
 .footer-connect {
@@ -582,10 +636,11 @@ h2 {
   border-radius: 4px;
   color: var(--white-color);
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-  font-weight: 700;
   font-size: 16px;
+  font-weight: 700;
   line-height: 1.87;
   letter-spacing: 0.06em;
+  text-align: center;
   position: relative;
   cursor: pointer;
 }
@@ -596,37 +651,4 @@ h2 {
   position: absolute;
   top: 13px;
   right: 28px;
-}
-
-.contacts-list__link, .instruction-list, .occupation__title, .keystroke-box__title, .ourteam__title, .networks-list, .networks-list__link, .clients-list, .clients-list__link, .footer-networks__link {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-
-.ourteam-list__item {
-  display: block;
-  flex-wrap: wrap;
-  text-align: center;
-}
-
-.header > .container, .occupation-list, .ourteam-list {
-  display: flex;
-  flex-wrap: wrap;
-  text-align: center;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.footer-networks, .footer-send__btn {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-.mainstream {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }/*# sourceMappingURL=main.css.map */

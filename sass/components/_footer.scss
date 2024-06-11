@@ -30,6 +30,7 @@
 .footer-subscribe__title {
   @include text(14px, 700, normal, 0.03em, left);
   text-transform: uppercase;
+  margin: 13px 0px 20px;
 }
 .footer-connect {
   width: 300px;
