@@ -5,8 +5,11 @@
   &__title {
     color: getColors("title-color");
     font-family: getFonts("font-roboto");
-    @include text(36px, 700, normal, 0.42px, center);
+    @include text(28px, 700, normal, 0.42px, center);
     padding: 0 0 50px;
+    @media (min-width: 1200px) {
+      font-size: 36px;
+    }
   }
 }
 .clients-list {
@@ -14,11 +17,17 @@
   gap: 30px;
   &__link {
     @extend %flex-center;
-    width: 170px;
+    width: 210px;
     height: 92px;
     border: 1px getColors("svg-color") solid;
     border-radius: 4px;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @media (min-width: 768px) {
+      max-width: 226px;
+    }
+    @media (min-width: 1200px) {
+      max-width: 170px;
+    }
   }
   &__svg {
     fill: getColors("svg-color");

@@ -1,6 +1,12 @@
 .occupation > .container {
   padding: 94px 15px;
 }
+.occupation{
+  display: none;
+  @media(min-width: 1200px){
+    display: flex;
+  }
+}
 .occupation__title {
   padding-bottom: 50px;
   font-size: 36px;

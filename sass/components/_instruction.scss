@@ -2,19 +2,27 @@
   padding: 94px 15px 0;
 }
 .instruction-list {
-    @extend %flex-center;
   column-gap: 30px;
+  @extend %flex-center;
   &__item {
     display: block;
-    flex-wrap: wrap;
-    width: 270px;
+    @media (min-width: 768px) {
+      max-width: 354px;
+      text-align: left;
+    }
+    @media (min-width: 1200px) {
+      max-width: 270px;
+    }
   }
   &__title {
     margin: 30px 0 10px;
     color: getColors("title-color");
     font-family: getFonts("font-roboto");
     text-transform: uppercase;
-    @include text(14px, 700, 1.71, 0.03em, left);
+    @include text(14px, 700, 1.71, 0.03em, center);
+    @media (min-width: 768px) {
+      text-align: left;
+    }
   }
   &__text {
     color: getColors("text-color");

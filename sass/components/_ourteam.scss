@@ -5,26 +5,36 @@
     padding: 94px 15px;
   }
   &__title {
-    font-size: 36px;
+    font-size: 28px;
     @extend %flex-center;
     padding: 0 0 50px;
+    @media (min-width: 1200px) {
+      font-size: 36px;
+    }
   }
 }
 .ourteam-list {
-  @extend %flex-space-between;
+  @extend %flex-center;
   column-gap: 30px;
+  row-gap: 30px;
   &__item {
     @extend %block-center;
-    width: 270px;
     background-color: getColors("white-color");
     padding-bottom: 30px;
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
-      0px 1px 1px 0px rgba(0, 0, 0, 0.14),
-      0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+      0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
   }
   &__img {
-    width: 270px;
-    height: 260px;
+    max-width: 450px;
+    height: 460px;
+    @media (min-width: 768px) {
+      max-width: 354px;
+      height: 374px;
+    }
+    @media (min-width: 1200px) {
+      max-width: 270px;
+      height: 260px;
+    }
     background-color: getColors("lightgray-color");
   }
   &__name {

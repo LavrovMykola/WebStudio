@@ -7,10 +7,26 @@
   padding: 60px 0;
   & .container {
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    @media (min-width: 768px) {
+      flex-direction: row;
+    }
   }
 }
 .footer-addresses {
   width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  @media (min-width: 768px) {
+    margin: 0;
+  }
+  @media (min-width: 1200px) {
+    text-align: left;
+  }
   &__web--studio {
     color: getColors("white-color");
   }
@@ -28,12 +44,27 @@
 }
 .footer-connect__title,
 .footer-subscribe__title {
-  @include text(14px, 700, normal, 0.03em, left);
+  @include text(14px, 700, normal, 0.03em, center);
   text-transform: uppercase;
-  margin: 13px 0px 20px;
+  margin: 60px 0px 20px;
+  @media (min-width: 768px) {
+    margin: 13px 0px 20px;
+  }
+  @media (min-width: 1200px) {
+  }
 }
 .footer-connect {
   width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  @media (min-width: 768px) {
+    margin: 0;
+  }
+  @media (min-width: 1200px) {
+  }
 }
 .footer-networks {
   @extend %flex-start;
@@ -64,6 +95,15 @@
 .footer-send {
   display: flex;
   gap: 12px;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  @media (min-width: 768px) {
+    margin: 0;
+  }
+  @media (min-width: 1200px) {
+    text-align: right;
+  }
   &__input {
     width: 358px;
     height: 50px;
