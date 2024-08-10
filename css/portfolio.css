@@ -214,18 +214,24 @@ a:hover {
 }
 
 .main {
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 94px 15px;
 }
 
 .pushbuttons {
-  text-align: center;
+  text-align: left;
   margin-bottom: 50px;
+}
+@media (min-width: 768px) {
+  .pushbuttons {
+    text-align: center;
+  }
 }
 
 .pushbuttons-div__button {
   margin-right: 8px;
+  margin-bottom: 21px;
   padding: 6px 22px;
   color: #212121;
   box-sizing: border-box;
@@ -239,6 +245,11 @@ a:hover {
   font-weight: 500;
   font-family: 'Roboto', sans-serif;
 }
+@media (min-width: 768px) {
+  .pushbuttons-div__button {
+    margin-bottom: 0;
+  }
+}
 .pushbuttons-div__button:hover {
   background-color: #2196F3;
   color: white;
@@ -247,7 +258,8 @@ a:hover {
 }
 
 .posters-list {
-  row-gap: 30px;
+  gap: 30px;
+  justify-content: flex-start;
 }
 .posters-list__item {
   flex: 1 1 100%;
@@ -256,11 +268,13 @@ a:hover {
 @media (min-width: 768px) {
   .posters-list__item {
     flex-basis: calc((100% - 30px) / 2);
+    max-width: 354px;
   }
 }
 @media (min-width: 1200px) {
   .posters-list__item {
     flex-basis: calc((100% - 60px) / 3);
+    max-width: 370px;
   }
 }
 .posters-list__item:hover {
@@ -270,8 +284,7 @@ a:hover {
 .posters-list__thumb {
   position: relative;
   overflow: hidden;
-  max-width: 450px;
-  max-height: 294px;
+  height: 294px;
   width: 100%;
 }
 @media (min-width: 768px) {
@@ -308,31 +321,26 @@ a:hover {
   text-align: left;
   margin: 0 24px 20px;
 }
-.posters-list__img {
-  max-width: 450px;
-  max-height: 294px;
-}
-@media (min-width: 768px) {
-  .posters-list__img {
-    max-width: 354px;
-  }
-}
-@media (min-width: 1200px) {
-  .posters-list__img {
-    max-width: 370px;
-  }
-}
-
 .overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  padding: 63px 29px;
+  padding: 77px 24px;
   background-color: rgba(33, 150, 243, 0.9);
   transform: translatey(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media (min-width: 768px) {
+  .overlay {
+    padding: 49px 24px 77px;
+  }
+}
+@media (min-width: 1200px) {
+  .overlay {
+    padding: 63px 24px;
+  }
 }
 .overlay__text {
   color: white;
@@ -353,6 +361,7 @@ a:hover {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  justify-content: space-around;
 }
 @media (min-width: 768px) {
   .footer .container {
@@ -449,8 +458,8 @@ a:hover {
 .footer-send {
   display: flex;
   gap: 12px;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
   margin: 0 auto;
 }
 @media (min-width: 768px) {
@@ -461,6 +470,7 @@ a:hover {
 @media (min-width: 1200px) {
   .footer-send {
     text-align: right;
+    flex-direction: row;
   }
 }
 .footer-send__input {

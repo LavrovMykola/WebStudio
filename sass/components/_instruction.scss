@@ -5,13 +5,12 @@
   column-gap: 30px;
   @extend %flex-center;
   &__item {
-    display: block;
+    flex: 1 1 100%;
     @media (min-width: 768px) {
-      max-width: 354px;
-      text-align: left;
+      flex-basis: calc((100% - 30px) / 2);
     }
     @media (min-width: 1200px) {
-      max-width: 270px;
+      flex-basis: calc((100% - 90px) / 4);
     }
   }
   &__title {

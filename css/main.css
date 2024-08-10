@@ -442,17 +442,16 @@ h2 {
        column-gap: 30px;
 }
 .instruction-list__item {
-  display: block;
+  flex: 1 1 100%;
 }
 @media (min-width: 768px) {
   .instruction-list__item {
-    max-width: 354px;
-    text-align: left;
+    flex-basis: calc((100% - 30px) / 2);
   }
 }
 @media (min-width: 1200px) {
   .instruction-list__item {
-    max-width: 270px;
+    flex-basis: calc((100% - 90px) / 4);
   }
 }
 .instruction-list__title {
@@ -689,6 +688,7 @@ h2 {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  justify-content: space-around;
 }
 @media (min-width: 768px) {
   .footer .container {
@@ -785,8 +785,8 @@ h2 {
 .footer-send {
   display: flex;
   gap: 12px;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
   margin: 0 auto;
 }
 @media (min-width: 768px) {
@@ -797,6 +797,7 @@ h2 {
 @media (min-width: 1200px) {
   .footer-send {
     text-align: right;
+    flex-direction: row;
   }
 }
 .footer-send__input {

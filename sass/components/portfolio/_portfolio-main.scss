@@ -1,15 +1,20 @@
 .main {
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 94px 15px;
 }
 .pushbuttons {
-  text-align: center;
+  text-align: left;
   margin-bottom: 50px;
+   @media (min-width: 768px) {
+        text-align: center;
+    }
+ 
 }
 .pushbuttons-div {
   &__button {
     margin-right: 8px;
+    margin-bottom: 21px;
     padding: 6px 22px;
     color: getColors("title-color");
     box-sizing: border-box;
@@ -22,6 +27,9 @@
     border-radius: 4px;
     font-weight: 500;
     font-family: getFonts("font-roboto");
+    @media (min-width: 768px) {
+        margin-bottom: 0;
+    }
   }
   &__button:hover {
     background-color: getColors("blue-color");
@@ -33,16 +41,19 @@
   }
 }
 .posters-list {
-  row-gap: 30px;
+  gap: 30px;
   @extend %flex-center;
+  justify-content: flex-start;
   &__item {
     flex: 1 1 100%;
     border: 1px solid getColors("poster-border-color");
     @media (min-width: 768px) {
       flex-basis: calc((100% - 30px) / 2);
+      max-width: 354px;
     }
     @media (min-width: 1200px) {
       flex-basis: calc((100% - 60px) / 3);
+      max-width: 370px;
     }
   }
   &__item:hover {
@@ -53,8 +64,7 @@
   &__thumb {
     position: relative;
     overflow: hidden;
-    max-width: 450px;
-    max-height: 294px;
+    height: 294px;
     width: 100%;
     @media (min-width: 768px) {
       max-width: 354px;
@@ -82,14 +92,6 @@
   }
   &__img {
     @extend %img;
-    max-width: 450px;
-    max-height: 294px;
-    @media (min-width: 768px) {
-      max-width: 354px;
-    }
-    @media (min-width: 1200px) {
-      max-width: 370px;
-    }
   }
 }
 .overlay {
@@ -98,10 +100,16 @@
   left: 0;
   width: 100%;
   height: 100%;
-  padding: 63px 29px;
+  padding: 77px 24px;
   background-color: getColors("backround-overlay");
   transform: translatey(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @media (min-width: 768px) {
+    padding: 49px 24px 77px;
+  }
+  @media (min-width: 1200px) {
+    padding: 63px 24px;
+  }
   &__text {
     color: getColors("white-color");
     font-size: 18px;
